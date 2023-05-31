@@ -1,0 +1,63 @@
+@layer components {
+  /* Typography */
+  .h1 {
+    @apply font-medium text-[#1a1a1a];
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  .p1 {
+    font-family: 'DM Sans';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .p1-md {
+    font-family: 'DM Sans';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .h2 {
+    @apply font-medium text-[#1a1a1a];
+    font-size:50px;
+    line-height: 50px;
+  }
+
+  .h2-sm {
+    @apply font-medium text-[#1a1a1a];
+    font-size:32px;
+    line-height: 32px;
+  }
+
+  .h3 {
+    @apply text-base font-medium text-[#1a1a1a];
+  }
+
+  .h5 {
+    @apply text-sm font-medium  text-[#9B9B9B];
+  }
+
+  /* Card */
+  .card {
+    @apply p-3 rounded-lg w-72 bg-white;
+  }
+
+  /* Avatar */
+  .avatar {
+    @apply w-10 h-10 rounded-full both-center bg-red-400;
+  }
+
+  /* Button */
+  .button {
+    @apply bg-[#F2F2F2] text-[#9B9B9B] font-medium text-base rounded-lg p-2;
+  }
+
+  .button-primary {
+    @apply button bg-[color:var(--theme-color)] text-white rounded-full both-center;
+  }
+}

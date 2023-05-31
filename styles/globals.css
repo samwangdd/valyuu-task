@@ -1,3 +1,5 @@
+@import './customComponent.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,25 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color:#3232FB;
+  --coral: #FF6E40;
+  --forest :#005B25;
+  --lime:#DCFF78;
+  --lavender: #EDE9FF;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/DMSans-Bold.ttf') format('truetype');
 }
 
 @media (prefers-color-scheme: dark) {
