@@ -6,8 +6,6 @@
     line-height: 65px;
   }
 
-
-
   .h2 {
     @apply font-medium text-[#1a1a1a];
     font-size:50px;
@@ -102,10 +100,10 @@
 
   /* Button */
   .button {
-    @apply bg-[#F2F2F2] text-[#9B9B9B] font-medium text-base rounded-lg p-2;
+    @apply bg-[#F2F2F2] text-[#9B9B9B] font-medium text-base rounded-lg;
   }
 
   .button-primary {
-    @apply button bg-[color:var(--theme-color)] text-white rounded-full both-center;
+    @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
   }
 }

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ResponsiveImage from '@/components/ResponsiveImage';
 
 import styles from './sell.module.sass';
-import SavePlantComponent from './save-plant-component';
+import SavePlantComponent from './components/save-plant-component';
 
 export default function SellHome() {
   return (
