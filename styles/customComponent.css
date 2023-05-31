@@ -8,14 +8,14 @@
 
   .h2 {
     @apply font-medium text-[#1a1a1a];
-    font-size:50px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
-  .h2-sm {
+  .h2-md {
     @apply font-medium text-[#1a1a1a];
-    font-size:32px;
-    line-height: 32px;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .h3 {
@@ -57,7 +57,7 @@
     line-height: 20px;
   }
 
-    .p1 {
+  .p1 {
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 16px;
@@ -90,7 +90,7 @@
 
   /* Card */
   .card {
-    @apply p-3 rounded-lg w-72 bg-white;
+    @apply bg-white rounded border border-[var(--jet-black)] overflow-hidden;
   }
 
   /* Avatar */

@@ -30,6 +30,13 @@
   src: url('/fonts/DMSans-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'PolySans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/PolySans-Median.otf') format('truetype');
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
