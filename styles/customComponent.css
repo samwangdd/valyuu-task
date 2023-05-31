@@ -6,21 +6,7 @@
     line-height: 65px;
   }
 
-  .p1 {
-    font-family: 'DM Sans';
-    /* font-style: normal; */
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-  }
 
-  .p1-md {
-    font-family: 'DM Sans';
-    /* font-style: normal; */
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
 
   .h2 {
     @apply font-medium text-[#1a1a1a];
@@ -35,11 +21,73 @@
   }
 
   .h3 {
-    @apply text-base font-medium text-[#1a1a1a];
+    @apply text-[#1a1a1a];
+    font-family: 'PolySans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .h3-md {
+    @apply text-[#1a1a1a];
+    font-family: 'PolySans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  /* Mobile/H4 */
+  .h4 {
+    font-family: 'PolySans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .h5 {
     @apply text-sm font-medium  text-[#9B9B9B];
+  }
+
+  .h5-md {
+    font-family: 'PolySans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+    .p1 {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .p1-md {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .p2 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .p2-md {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   /* Card */
