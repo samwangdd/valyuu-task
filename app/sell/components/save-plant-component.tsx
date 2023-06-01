@@ -64,7 +64,6 @@ export default function SavePlantComponent() {
         width={400}
         height={300}
         quality={90}
-        objectFit='cover'
         className='absolute w-[8.875rem] -bottom-[6rem] right-[15.25rem] -rotate-[145deg] md:w-[13.75rem] invisible md:visible z-10'
       />
     </div>
