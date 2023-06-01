@@ -27,8 +27,7 @@ const CardComponent = (props: ICardProps) => {
         width={800}
         height={600}
         quality={90}
-        objectFit='cover'
-        className={`w-full md:m-5 transition-all md:object-cover ${
+        className={`w-full md:m-5 transition-all object-cover h-[11.82rem] ${
           isHovered ? 'md:w-[330px] md:h-[315px]' : 'md:w-[293px] md:h-[315px]'
         } `}
       />
