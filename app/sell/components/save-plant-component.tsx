@@ -1,29 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
+import useHoverDelay from '@/hooks/useHoverDelay';
 
 import Card from './card-component';
-import useThrottle from '@/hooks/useThrottle';
 
 export default function SavePlantComponent() {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = useThrottle(
-    () => {
-      setIsHovered(true);
-    },
-    500,
-    [isHovered]
-  );
-
-  const handleMouseLeave = useThrottle(
-    () => {
-      setIsHovered(false);
-    },
-    500,
-    [isHovered]
-  );
+  const [isHovered, handleMouseEnter, handleMouseLeave] = useHoverDelay(500); // 延迟 hover，避免频繁切换样式，优化体验
 
   return (
     <div className='pt-[4.5rem] bg-white pb-[3.25rem] w-full md:flex items-center relative'>
