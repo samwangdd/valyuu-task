@@ -22,6 +22,7 @@ module.exports = {
           forest: '#005B25',
           lime: '#DCFF78',
           lavender: '#EDE9FF',
+          background: '#F4F4F4',
         },
       },
     },
