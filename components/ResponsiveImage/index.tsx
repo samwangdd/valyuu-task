@@ -1,5 +1,10 @@
 // ResponsiveImage
-const ResponsiveImage = ({ src, alt }) => {
+interface ResponsiveImageProps {
+  src: string;
+  alt: string;
+}
+
+const ResponsiveImage = ({ src, alt }: ResponsiveImageProps) => {
   return (
     <picture>
       <source srcSet={`${src}?w=640`} media='(max-width: 640px)' />

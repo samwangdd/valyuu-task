@@ -5,7 +5,7 @@ import Card from './card-component';
 
 export default function SavePlantComponent() {
   return (
-    <div className='pt-16 md:flex'>
+    <div className='pt-16 md:flex border-t border-va-black'>
       <div className='px-5'>
         <p className='h3 text-center mb-2'>Come and join us!</p>
         <p className='p1 mb-2 text-center'>together with our 134,000 members, Valyuu has already</p>
@@ -17,7 +17,7 @@ export default function SavePlantComponent() {
           flag='Saved CO₂'
           count='90,000g'
           desc='From Paris to New York'
-          color='va-forest'
+          color='bg-va-forest'
         />
         <FlagItem
           className='border-b border-va-black'
@@ -25,9 +25,15 @@ export default function SavePlantComponent() {
           flag='Tree Planted'
           count='23,500'
           desc='Driving on GAS'
-          color='va-blue'
+          color='bg-va-blue'
         />
-        <FlagItem src='/USP1 2-2.png' flag='Donation' count='€7,600' desc='From Paris to New York' color='va-coral' />
+        <FlagItem
+          src='/USP1 2-2.png'
+          flag='Donation'
+          count='€7,600'
+          desc='From Paris to New York'
+          color='bg-va-coral'
+        />
       </div>
     </div>
   );

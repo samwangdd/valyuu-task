@@ -17,7 +17,7 @@ export default function SavePlantComponent() {
   };
 
   return (
-    <div className='pt-16 md:flex'>
+    <div className='pt-[4.5rem] md:flex bg-white pb-[3.25rem]'>
       {/* <div className='flex'>
         <div
           className={`w-64 h-64 transition-colors duration-300 ${isHovered ? 'bg-yellow-500' : 'bg-blue-500'}`}
@@ -34,17 +34,15 @@ export default function SavePlantComponent() {
         src='/surface-VDWS2oWdZzg-unsplash 1-2.png'
         title='Sustainability'
         description='donate the value of your product to Stichting Leergeld.'
-        theme='lavender'
         onClick={() => {}}
-        className='mt-5'
+        className='mt-5 bg-va-lavender'
       />
       <Card
         src='/surface-VDWS2oWdZzg-unsplash 1.png'
         title='Sustainability'
         description='donate the value of your product to Stichting Leergeld.'
-        theme='lime'
         onClick={() => {}}
-        className='mt-5'
+        className='mt-5 bg-va-lime'
       />
     </div>
   );
