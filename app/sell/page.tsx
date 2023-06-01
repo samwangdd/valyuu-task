@@ -12,8 +12,8 @@ export default function SellHome() {
           <p className='p1 md:p1-md'>Every year, there are</p>
           <p className='h2 text-white md:h2-md md:text-white'>100,100,100</p>
           <p className='p1 md:p1-md'>end-of-use electronics,</p>
-          <p className='h2 text-white font-polySans md:h2-md md:text-white md:font-polySans pt-5'> 2000 € </p>
-          <p className='p1 md:p1-md pb-5'> value is ignored, and eventually </p>
+          <p className='h2 text-white font-polySans md:h2-md md:text-white md:font-polySans pt-5 md:pt-12'> 2000 € </p>
+          <p className='p1 pb-5 md:p1-md md:pb-12'> value is ignored, and eventually </p>
           <p className='h2 text-white md:h2-md md:text-white'> 1000 KG </p>
           <p className='p1 md:p1-md'> waste is generated</p>
         </div>
