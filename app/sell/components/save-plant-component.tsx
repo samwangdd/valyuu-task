@@ -10,7 +10,6 @@ export default function SavePlantComponent() {
 
   const handleMouseEnter = useThrottle(
     () => {
-      console.log('%c [ handleMouseEnter ]-11', 'font-size:13px; background:#2b72b8; color:#6fb6fc;', handleMouseEnter);
       setIsHovered(true);
     },
     500,
@@ -19,7 +18,6 @@ export default function SavePlantComponent() {
 
   const handleMouseLeave = useThrottle(
     () => {
-      console.log('%c [ handleMouseLeave ]-16', 'font-size:13px; background:#13966d; color:#57dab1;', handleMouseLeave);
       setIsHovered(false);
     },
     500,
@@ -53,8 +51,8 @@ export default function SavePlantComponent() {
           onClick={() => {}}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={`bg-va-lime mt-5 md:absolute md:transform transition-all md:duration-500 md:translate-x-[620px] md:translate-y-4 md:rotate-[8.5deg] ${
-            isHovered ? 'md:-rotate-[8.5deg] md:translate-x-[328px]' : 'md:w-[333px]'
+          className={`bg-va-lime mt-5 md:absolute md:transform transition-all md:duration-500 md:left-[620px] md:translate-y-4 md:rotate-[8.5deg] ${
+            isHovered ? 'md:rotate-[-8deg] md:left-[320px]' : 'md:w-[333px]'
           }`}
           isHovered={isHovered}
         />

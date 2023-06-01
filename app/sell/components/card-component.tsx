@@ -20,16 +20,17 @@ const CardComponent = (props: ICardProps) => {
   const { className, title, src, onClick, isHovered, ...rest } = props;
 
   return (
-    <div
-      className={`${className} mx-5 rounded border border-va-black overflow-hidden md:rounded-md md:flex`}
-      {...rest}
-    >
+    <div className={`${className} mx-5 rounded border border-va-black overflow-hidden md:rounded-md md:flex`} {...rest}>
       <Image
         src={src}
         alt='card-image'
-        width={100}
-        height={100}
-        className={`w-full md:m-5 transition-all ${isHovered ? 'md:w-[330px] md:h-[315px]' : 'md:w-[293px] md:h-[315px]'} `}
+        width={800}
+        height={600}
+        quality={90}
+        objectFit='cover'
+        className={`w-full md:m-5 transition-all md:object-cover ${
+          isHovered ? 'md:w-[330px] md:h-[315px]' : 'md:w-[293px] md:h-[315px]'
+        } `}
       />
       <div className='py-6 px-5 border-t border-va-black md:border-0 md:flex md:flex-col justify-center'>
         <p className='h4 mb-2'>{title}</p>

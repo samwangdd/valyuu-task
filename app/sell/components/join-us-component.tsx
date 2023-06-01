@@ -39,6 +39,7 @@ export default function JoinUsComponent() {
         alt='orange'
         width={100}
         height={100}
+        quality={100}
         className='absolute w-[8.875rem] -top-[5rem] right-1 -rotate-[145deg] md:w-[13.75rem]'
       />
       <Image
@@ -46,6 +47,7 @@ export default function JoinUsComponent() {
         alt='orange'
         width={100}
         height={100}
+        quality={100}
         className='absolute w-[8.875rem] top-[14.375rem] left-[-2.75rem] -rotate-[28.5deg] md:top-4 md:w-[13.75rem]'
       />
       <Image
@@ -53,6 +55,7 @@ export default function JoinUsComponent() {
         alt='orange'
         width={100}
         height={100}
+        quality={100}
         className='absolute invisible -rotate-[148deg] md:visible md:top-[13.25rem] md:left-[22.5rem] md:w-[13.75rem]'
       />
       <Image
@@ -60,6 +63,7 @@ export default function JoinUsComponent() {
         alt='orange'
         width={100}
         height={100}
+        quality={100}
         className='absolute w-[8.875rem] top-[30rem] right-[-2.5rem] -rotate-[22deg] md:top-[13.5rem] md:w-[13.75rem]'
       />
     </div>
