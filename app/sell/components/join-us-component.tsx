@@ -37,33 +37,33 @@ export default function JoinUsComponent() {
       <Image
         src='/14120fa4-d618-48ca-b752-38e86cc05a54.png'
         alt='orange'
-        width={100}
-        height={100}
-        quality={100}
-        className='absolute w-[8.875rem] -top-[5rem] right-1 -rotate-[145deg] md:w-[13.75rem]'
+        width={400}
+        height={300}
+        quality={90}
+        className='absolute w-[8.875rem] -top-[5rem] right-1 -rotate-[145deg] md:w-[13.75rem] md:invisible'
       />
       <Image
         src='/cfc36ecf-e3ad-41e7-9cd8-3ba7a2cc7936.png'
         alt='orange'
-        width={100}
-        height={100}
-        quality={100}
+        width={400}
+        height={300}
+        quality={90}
         className='absolute w-[8.875rem] top-[14.375rem] left-[-2.75rem] -rotate-[28.5deg] md:top-4 md:w-[13.75rem]'
       />
       <Image
         src='/63e29ddd-b848-4f31-b57e-9674c7f971f7.png'
         alt='orange'
-        width={100}
-        height={100}
-        quality={100}
+        width={400}
+        height={300}
+        quality={90}
         className='absolute invisible -rotate-[148deg] md:visible md:top-[13.25rem] md:left-[22.5rem] md:w-[13.75rem]'
       />
       <Image
         src='/61aa2b97-2a27-4334-83c3-48844654aa68.png'
         alt='orange'
-        width={100}
-        height={100}
-        quality={100}
+        width={400}
+        height={300}
+        quality={90}
         className='absolute w-[8.875rem] top-[30rem] right-[-2.5rem] -rotate-[22deg] md:top-[13.5rem] md:w-[13.75rem]'
       />
     </div>

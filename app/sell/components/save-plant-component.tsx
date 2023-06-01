@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 import Card from './card-component';
 import useThrottle from '@/hooks/useThrottle';
@@ -25,7 +26,7 @@ export default function SavePlantComponent() {
   );
 
   return (
-    <div className='pt-[4.5rem] bg-white pb-[3.25rem] w-full md:flex items-center'>
+    <div className='pt-[4.5rem] bg-white pb-[3.25rem] w-full md:flex items-center relative'>
       <div className='text-center md:text-left md:w-[330px] md:ml-[2.125rem]'>
         <p className='p1 mb-2 '>We believe</p>
         <p className='h3 mb-1'>
@@ -35,7 +36,7 @@ export default function SavePlantComponent() {
       </div>
       <div className='md:h-[29.5rem] md:flex-1 md:relative'>
         <Card
-          src='/surface-VDWS2oWdZzg-unsplash 1-2.png'
+          src='/e62ba45a-df70-4ef5-932e-0a0a023d053e.png'
           title='Sustainability'
           description='donate the value of your product to Stichting Leergeld.'
           onClick={() => {}}
@@ -52,11 +53,20 @@ export default function SavePlantComponent() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className={`bg-va-lime mt-5 md:absolute md:transform transition-all md:duration-500  md:translate-y-4 ${
-            isHovered ? 'md:rotate-[-8deg] md:left-[330px]' : 'md:rotate-[8.5deg] md:left-[620px] md:w-[333px]'
+            isHovered ? 'md:rotate-[-8.5deg] md:left-[330px]' : 'md:rotate-[8.5deg] md:left-[620px] md:w-[333px]'
           }`}
           isHovered={isHovered}
         />
       </div>
+      <Image
+        src='/14120fa4-d618-48ca-b752-38e86cc05a54.png'
+        alt='orange'
+        width={400}
+        height={300}
+        quality={90}
+        objectFit='cover'
+        className='absolute w-[8.875rem] -bottom-[6rem] right-[15.25rem] -rotate-[145deg] md:w-[13.75rem] invisible md:visible z-10'
+      />
     </div>
   );
 }
