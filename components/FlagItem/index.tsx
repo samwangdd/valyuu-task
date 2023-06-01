@@ -19,7 +19,7 @@ const FlagItem: FunctionComponent<FlagItemProps> = (props) => {
   const { src, flag, count, desc, color = '#EDE9FF', className } = props;
 
   return (
-    <div className={`${className} flex items-center mx-5 py-8`}>
+    <div className={`${className} flex items-center mx-5 py-8 md:my-8 md:py-0`}>
       <div className={`${color} w-16 mr-4 rounded-lg`}>
         <Image src={src} alt='flagItem' width={100} height={100} className='p-[2px]' />
       </div>
