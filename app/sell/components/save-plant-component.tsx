@@ -45,14 +45,14 @@ export default function SavePlantComponent() {
           isHovered={!isHovered}
         />
         <Card
-          src='/410c4c96-125f-451b-ab18-f9ba724ffc84.png'
+          src='/7d74e166-3a68-4f42-99d6-1d86e02a659e.png'
           title='Do some good'
           description='donate the value of your product to Stichting Leergeld.'
           onClick={() => {}}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={`bg-va-lime mt-5 md:absolute md:transform transition-all md:duration-500 md:left-[620px] md:translate-y-4 md:rotate-[8.5deg] ${
-            isHovered ? 'md:rotate-[-8deg] md:left-[320px]' : 'md:w-[333px]'
+          className={`bg-va-lime mt-5 md:absolute md:transform transition-all md:duration-500  md:translate-y-4 ${
+            isHovered ? 'md:rotate-[-8deg] md:left-[330px]' : 'md:rotate-[8.5deg] md:left-[620px] md:w-[333px]'
           }`}
           isHovered={isHovered}
         />
