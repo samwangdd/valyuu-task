@@ -8,8 +8,8 @@ const Button = (props: IButtonProps) => {
   const { icon: Icon } = props;
 
   return (
-    <button className='button-primary px-3'>
-      <span className='py-2 p2'>{props.children}</span>
+    <button className='button-primary px-3 md:px-5'>
+      <span className='p2 py-2 md:py-[1.125rem]'>{props.children}</span>
       {Icon}
     </button>
   );

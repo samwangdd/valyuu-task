@@ -82,14 +82,6 @@
     line-height: 21px;
   }
 
-  .p2-md {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   /* Card */
   .card {
     @apply bg-white rounded border border-[var(--jet-black)] overflow-hidden;
@@ -107,5 +99,24 @@
 
   .button-primary {
     @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
+  }
+
+  /* 适配 md */
+  @media screen and (min-width: 768px) {
+    .p2 {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .button-primary {
+      @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
+    }
+
+    .hover-card {
+      @apply w-[333px]
+    }
   }
 }
