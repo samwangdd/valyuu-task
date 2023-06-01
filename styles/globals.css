@@ -4,16 +4,49 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+p,
+pre {
+  margin: 0;
+}
+div[id='__next'] {
+  height: 100%;
+  width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --theme-color:#3232FB;
-  --jet-black: #1A1A1A;
-  --coral: #FF6E40;
-  --forest :#005B25;
-  --lime:#DCFF78;
-  --lavender: #EDE9FF;
+  --theme-color: #3232fb;
+  --jet-black: #1a1a1a;
+  --coral: #ff6e40;
+  --forest: #005b25;
+  --lime: #dcff78;
+  --lavender: #ede9ff;
 }
 
 @font-face {
@@ -43,14 +76,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
