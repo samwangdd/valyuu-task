@@ -21,7 +21,7 @@ const CardComponent = (props: ICardProps) => {
 
   return (
     <div
-      className={`${className} mx-5 rounded border border-va-black overflow-hidden md:rounded-md md:flex md:w-[736px]`}
+      className={`${className} mx-5 rounded border border-va-black overflow-hidden md:rounded-md md:flex`}
       {...rest}
     >
       <Image

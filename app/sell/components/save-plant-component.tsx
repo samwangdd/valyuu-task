@@ -28,16 +28,6 @@ export default function SavePlantComponent() {
 
   return (
     <div className='pt-[4.5rem] bg-white pb-[3.25rem] w-full md:flex items-center'>
-      {/* <div className='flex'>
-        <div
-          className={`w-64 h-64 transition-colors duration-300 ${isHovered ? 'bg-yellow-500' : 'bg-blue-500'}`}
-        ></div>
-        <div
-          className={`w-64 h-64 transition-colors duration-300 ${isHovered ? 'bg-blue-500' : 'bg-yellow-500'}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        ></div>
-      </div> */}
       <div className='text-center md:text-left md:w-[330px] md:ml-[2.125rem]'>
         <p className='p1 mb-2 '>We believe</p>
         <p className='h3 mb-1'>
@@ -55,7 +45,7 @@ export default function SavePlantComponent() {
             className={`bg-va-lavender mt-5 md:absolute md:transform md:rotate-[-7deg] md:translate-y-5 ${
               isHovered ? 'md:w-[333px]' : ''
             }`}
-            isHovered={isHovered}
+            isHovered={!isHovered}
           />
         </div>
         <div className='md:relative md:w-full'>
