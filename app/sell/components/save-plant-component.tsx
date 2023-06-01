@@ -42,8 +42,8 @@ export default function SavePlantComponent() {
             title='Sustainability'
             description='donate the value of your product to Stichting Leergeld.'
             onClick={() => {}}
-            className={`bg-va-lavender mt-5 md:absolute md:transform md:rotate-[-7deg] md:translate-y-5 ${
-              isHovered ? 'md:w-[333px]' : ''
+            className={`bg-va-lavender mt-5 md:absolute md:transform transition-all md:rotate-[-7deg] md:translate-y-5 ${
+              isHovered ? 'md:w-[333px] md:rotate-[7deg]' : ''
             }`}
             isHovered={!isHovered}
           />
@@ -57,7 +57,7 @@ export default function SavePlantComponent() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className={`bg-va-lime mt-5 md:absolute md:transform transition-all md:right-0 md:rotate-[8.5deg] ${
-              isHovered ? '' : 'md:w-[333px]'
+              isHovered ? 'md:rotate-[-8.5deg]' : 'md:w-[333px]'
             }`}
             isHovered={isHovered}
           />

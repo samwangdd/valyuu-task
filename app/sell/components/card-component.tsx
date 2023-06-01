@@ -29,7 +29,7 @@ const CardComponent = (props: ICardProps) => {
         alt='card-image'
         width={100}
         height={100}
-        className={`w-full md:m-5 ${isHovered ? 'md:w-[330px] md:h-[315px]' : 'md:w-[293px] md:h-[315px]'} `}
+        className={`w-full md:m-5 transition-all ${isHovered ? 'md:w-[330px] md:h-[315px]' : 'md:w-[293px] md:h-[315px]'} `}
       />
       <div className='py-6 px-5 border-t border-va-black md:border-0 md:flex md:flex-col justify-center'>
         <p className='h4 mb-2'>{title}</p>
