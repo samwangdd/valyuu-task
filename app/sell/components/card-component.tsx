@@ -12,8 +12,8 @@ interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   description: string;
   onClick: () => void;
+  isHovered: boolean; // 这里的 hover 态是以右侧卡片为准，所以在三目运算中 ? 后面是左侧卡片的样式，: 后面是右侧卡片的样式
   className?: string;
-  isHovered: boolean;
 }
 
 const CardComponent = (props: ICardProps) => {
@@ -32,7 +32,15 @@ const CardComponent = (props: ICardProps) => {
         } `}
       />
       <div className='py-6 px-5 border-t border-va-black md:border-0 md:flex md:flex-col justify-center'>
-        <p className='h4 mb-2'>{title}</p>
+        <p
+          className={`h4 mb-2 md:relative md:w-40 ${
+            isHovered
+              ? ' top-0 left-0  md:text-va-black md:text-left'
+              : 'top-[70px] left-[-260px] md:text-white md:text-center'
+          }`}
+        >
+          {title}
+        </p>
         <p className='p2 mb-8 md:mb-[2.125rem]'>
           donate the value of your product to <br />
           Stichting Leergeld.
