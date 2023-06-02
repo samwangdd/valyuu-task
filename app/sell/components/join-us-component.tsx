@@ -38,6 +38,7 @@ export default function JoinUsComponent() {
         />
       </div>
       {/* icon 绝对定位 */}
+      {/* earth */}
       <Image
         src='/14120fa4-d618-48ca-b752-38e86cc05a54.png'
         alt='orange'
@@ -46,6 +47,7 @@ export default function JoinUsComponent() {
         quality={90}
         className='absolute w-[8.875rem] -top-[5rem] right-1 -rotate-[145deg] md:w-[13.75rem] md:invisible'
       />
+      {/* valyuu logo */}
       <Image
         src='/cfc36ecf-e3ad-41e7-9cd8-3ba7a2cc7936.png'
         alt='orange'
@@ -54,14 +56,16 @@ export default function JoinUsComponent() {
         quality={90}
         className='absolute w-[8.875rem] top-[14.375rem] left-[-2.75rem] -rotate-[28.5deg] md:top-4 md:w-[13.75rem]'
       />
+      {/* green */}
       <Image
         src='/63e29ddd-b848-4f31-b57e-9674c7f971f7.png'
         alt='orange'
         width={400}
         height={300}
         quality={90}
-        className='absolute invisible -rotate-[148deg] md:visible md:top-[13.25rem] md:left-[22.5rem] md:w-[13.75rem]'
+        className='absolute invisible -rotate-[148deg] md:visible md:top-[16rem] md:left-[22.5rem] md:w-[13.75rem]'
       />
+      {/* orange */}
       <Image
         src='/61aa2b97-2a27-4334-83c3-48844654aa68.png'
         alt='orange'
