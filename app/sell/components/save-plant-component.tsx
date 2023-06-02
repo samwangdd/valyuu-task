@@ -5,11 +5,15 @@ import useHoverDelay from '@/hooks/useHoverDelay';
 
 import Card from './card-component';
 
-export default function SavePlantComponent() {
+interface ISavePlantComponentProps {
+  className?: string;
+}
+
+export default function SavePlantComponent(props: ISavePlantComponentProps) {
   const [isHovered, handleMouseEnter, handleMouseLeave] = useHoverDelay(500); // 延迟 hover，避免频繁切换样式，优化体验
 
   return (
-    <div className='pt-[4.5rem] bg-white pb-[3.25rem] w-full md:flex items-center relative'>
+    <div className='pt-[4.5rem] border-b border-va-black bg-white pb-[3.25rem] w-full md:flex items-center relative va-panel'>
       <div className='text-center md:text-left md:w-[330px] md:ml-[2.125rem]'>
         <p className='p1 mb-2 '>We believe</p>
         <p className='h3 mb-1'>

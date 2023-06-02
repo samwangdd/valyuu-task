@@ -2,9 +2,13 @@ import Image from 'next/image';
 import FlagItem from '@/components/FlagItem';
 import Divider from '@/components/Divider';
 
-export default function JoinUsComponent() {
+interface IJoinUsComponentProps {
+  className?: string;
+}
+
+export default function JoinUsComponent(props: IJoinUsComponentProps) {
   return (
-    <div className='pt-16 border-t border-va-black bg-va-background w-full relative md:px-9 md:pt-20 pb-40 overflow-hidden'>
+    <div className='pt-16 bg-va-background w-full relative md:px-9 md:pt-20 pb-40 overflow-hidden va-panel'>
       <div className='px-5'>
         <p className='h3 text-center mb-2'>Come and join us!</p>
         <p className='p1 text-center'>together with our 134,000 members, Valyuu has already</p>

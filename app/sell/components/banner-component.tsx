@@ -1,10 +1,12 @@
 import { FunctionComponent } from 'react';
 
-interface BannerComponentProps {}
+interface BannerComponentProps {
+  className?: string;
+}
 
 const BannerComponent: FunctionComponent<BannerComponentProps> = (props) => {
   return (
-    <div className='w-full flex items-center justify-center bg-[url("/surface-0WFE46jwO8o-unsplash1.jpg")] bg-cover bg-center bg-no-repeat text-white'>
+    <div className='w-full flex items-center justify-center bg-[url("/surface-0WFE46jwO8o-unsplash1.jpg")] bg-cover bg-center bg-no-repeat text-white va-panel'>
       <div className='pt-16 pb-12 md:py-24 text-center'>
         <p className='p1'>Every year, there are</p>
         <p className='h2 text-white md:text-white'>100,100,100</p>
