@@ -69,7 +69,7 @@
     @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
   }
 
-  /* 适配 md */
+  /* 适配 md 以上 */
   @media screen and (min-width: 768px) {
     .h2 {
       @apply font-medium text-[#1a1a1a];

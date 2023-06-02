@@ -9,11 +9,7 @@ interface IIconProps {
 function Icon(props: IIconProps) {
   const { src, size = 16, className } = props;
 
-  return (
-    <div className={className}>
-      <Image src={src} alt='icon' width={size} height={size} />
-    </div>
-  );
+  return <Image src={src} alt='icon' width={size} height={size} className={className} />;
 }
 
 export default Icon;

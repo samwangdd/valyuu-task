@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import FlagItem from '@/components/FlagItem';
+import Divider from '@/components/Divider';
 
 export default function JoinUsComponent() {
   return (
@@ -8,23 +9,25 @@ export default function JoinUsComponent() {
         <p className='h3 text-center mb-2'>Come and join us!</p>
         <p className='p1 text-center'>together with our 134,000 members, Valyuu has already</p>
       </div>
-      <div className='card mx-5 rounded-lg md:mt-10 md:flex relative z-10'>
+      <div className='card mx-5 rounded-lg relative z-10 mt-6 md:mt-10 md:flex md:items-center'>
         <FlagItem
-          className='border-b md:border-r md:border-b-0 border-va-black md:flex-1'
+          className='border-b border-va-black  md:border-b-0 md:flex-1'
           src='/USP1 2.png'
           flag='Saved CO₂'
           count='90,000g'
           desc='From Paris to New York'
           color='bg-va-forest'
         />
+        <Divider type='vertical' className='md:border-r md:h-20' />
         <FlagItem
-          className='border-b md:border-r md:border-b-0 border-va-black md:flex-1'
+          className='border-b md:border-b-0 border-va-black md:flex-1'
           src='/USP1 2-1.png'
           flag='Tree Planted'
           count='23,500'
           desc='Driving on GAS'
           color='bg-va-blue'
         />
+        <Divider type='vertical' className='md:border-r md:h-20' />
         <FlagItem
           className='md:flex-1'
           src='/USP1 2-2.png'
@@ -34,6 +37,7 @@ export default function JoinUsComponent() {
           color='bg-va-coral'
         />
       </div>
+      {/* icon 绝对定位 */}
       <Image
         src='/14120fa4-d618-48ca-b752-38e86cc05a54.png'
         alt='orange'
@@ -64,7 +68,7 @@ export default function JoinUsComponent() {
         width={400}
         height={300}
         quality={90}
-        className='absolute w-[8.875rem] top-[30rem] right-[-2.5rem] -rotate-[22deg] md:top-[13.5rem] md:w-[13.75rem]'
+        className='absolute w-[8.875rem] top-[31rem] right-[-2.5rem] -rotate-[22deg] md:top-[13.5rem] md:w-[13.75rem]'
       />
     </div>
   );

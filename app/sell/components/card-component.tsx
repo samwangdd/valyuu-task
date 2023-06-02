@@ -38,7 +38,7 @@ const CardComponent = (props: ICardProps) => {
           Stichting Leergeld.
         </p>
         <div>
-          <Button onClick={onClick} icon={<Icon src='/forward.svg' className='ml-2' />}>
+          <Button onClick={onClick} icon={<Icon src='/forward.svg' className='ml-2 md:w-[1.625rem]' />}>
             Know more
           </Button>
         </div>
