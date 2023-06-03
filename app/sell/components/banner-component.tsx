@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react';
 
-interface BannerComponentProps {}
+interface BannerComponentProps {
+  className?: string;
+}
 
 const BannerComponent: FunctionComponent<BannerComponentProps> = (props) => {
   return (
