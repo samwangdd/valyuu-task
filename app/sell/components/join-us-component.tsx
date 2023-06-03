@@ -3,6 +3,7 @@ import Image from 'next/image';
 import FlagItem from '@/components/FlagItem';
 import Divider from '@/components/Divider';
 import useScrollOverlay from '@/hooks/useScrollOverlay';
+import Overlay from '@/components/Overlay';
 
 interface IJoinUsComponentProps {
   className?: string;
@@ -83,6 +84,7 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           quality={90}
           className='absolute w-[7.875rem] top-[29rem] right-0 md:top-[13.5rem] md:w-[10.85rem]'
         />
+        <Overlay />
       </div>
     </div>
   );

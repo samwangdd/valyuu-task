@@ -21,16 +21,8 @@ export default function useScrollOverlay(selectorName: string = '.va-panel'): us
       const panels = self.selector(selectorName);
 
       panels.forEach((panel: HTMLElement) => {
-        // Create overlay DOM
-        const overlay = document.createElement('div');
-        overlay.classList.add('overlay');
-        overlay.style.width = '100%';
-        overlay.style.height = '100%';
-        overlay.style.position = 'absolute';
-        overlay.style.top = '0';
-        overlay.style.left = '0';
-        overlay.style.zIndex = '-1';
-        panel.appendChild(overlay);
+        // 为每个 panel 添加蒙层，需要在 va-panel 组件下使用 Overlay 组件
+        const overlay = panel.querySelector('.overlay');
 
         gsap.from(panel, {
           y: '100px',
@@ -43,13 +35,12 @@ export default function useScrollOverlay(selectorName: string = '.va-panel'): us
             scrub: true,
             // markers: true,
             onEnterBack: () => {
-              gsap.to(overlay, { duration: 1, zIndex: -1, opacity: 0, backgroundColor: 'transparent' });
+              gsap.to(overlay, { duration: 0.5, zIndex: -10, backgroundColor: 'transparent' });
             },
             onLeave: () => {
               gsap.to(overlay, {
-                opacity: 0.5,
-                duration: 1,
-                zIndex: 10,
+                duration: 0.5,
+                zIndex: 1000,
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
               });
             },

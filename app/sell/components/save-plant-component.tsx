@@ -1,12 +1,10 @@
 'use client';
 
-import { useRef, useLayoutEffect, LegacyRef } from 'react';
-import Image from 'next/image';
-
 import useHoverDelay from '@/hooks/useHoverDelay';
 import useScrollOverlay from '@/hooks/useScrollOverlay';
 
 import Card from './card-component';
+import Overlay from '@/components/Overlay';
 
 interface ISavePlantComponentProps {
   className?: string;
@@ -52,6 +50,7 @@ export default function SavePlantComponent(props: ISavePlantComponentProps) {
             }`}
           />
         </div>
+        <Overlay />
       </div>
     </div>
   );
