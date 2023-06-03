@@ -25,24 +25,23 @@ export default function useScrollOverlay(selectorName: string = '.va-panel'): us
         const overlay = panel.querySelector('.overlay');
 
         gsap.from(panel, {
-          y: '100px',
-          opacity: 0,
-          duration: 1,
+          y: 200,
+          duration: 0.5,
           scrollTrigger: {
             trigger: panel,
-            start: 'top 80%',
-            end: 'bottom 70%',
+            start: 'top bottom',
+            end: 'bottom 90%',
             scrub: true,
             // markers: true,
-            onEnterBack: () => {
-              gsap.to(overlay, { duration: 0.5, zIndex: -10, backgroundColor: 'transparent' });
-            },
             onLeave: () => {
               gsap.to(overlay, {
                 duration: 0.5,
                 zIndex: 1000,
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
               });
+            },
+            onEnterBack: () => {
+              gsap.to(overlay, { duration: 0.5, zIndex: -10, backgroundColor: 'transparent' });
             },
           },
         });
