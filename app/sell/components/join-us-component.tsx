@@ -55,7 +55,7 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           width={400}
           height={300}
           quality={90}
-          className='absolute w-[8.875rem] -top-[5rem] right-7 -rotate-[145deg] md:right-1 md:w-[13.75rem] md:right-[15.25rem]'
+          className='absolute w-[8.875rem] -top-[5rem] right-7 -rotate-[145deg] md:w-[13.75rem] md:right-[15.25rem]'
         />
         {/* valyuu logo */}
         <Image
