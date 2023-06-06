@@ -17,7 +17,7 @@ interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const CardComponent = (props: ICardProps) => {
-  const { className, title, src, onClick, isHovered, ...rest } = props;
+  const { className, title, src, onClick, isHovered, description, ...rest } = props;
 
   return (
     <div className={`${className} mx-5 rounded border border-va-black overflow-hidden xl:rounded-md xl:flex`} {...rest}>
@@ -39,10 +39,7 @@ const CardComponent = (props: ICardProps) => {
         >
           {title}
         </p>
-        <p className='p2 mb-8 xl:mb-[2.125rem]'>
-          donate the value of your product to <br />
-          Stichting Leergeld.
-        </p>
+        <p className='p2 mb-8 xl:mb-[2.125rem] xl:w-[270px]'>{description}</p>
         <div>
           <Button onClick={onClick} icon={<Icon src='/forward.svg' className='ml-2 xl:w-[1.625rem]' />}>
             Know more

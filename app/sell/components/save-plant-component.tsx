@@ -29,7 +29,7 @@ export default function SavePlantComponent(props: ISavePlantComponentProps) {
             description='donate the value of your product to Stichting Leergeld.'
             onClick={() => {}}
             className={`bg-va-lavender mt-5 sm:flex-1 xl:absolute xl:transform transition-all xl:duration-500 xl:rotate-[-7deg] xl:translate-y-5 ${
-              isHovered ? 'xl:w-[333px] xl:rotate-[7deg]' : ''
+              isHovered ? 'xl:w-[333px] xl:max-w-[35.063rem] xl:rotate-[7deg]' : ''
             }`}
           />
           <Card
@@ -43,7 +43,7 @@ export default function SavePlantComponent(props: ISavePlantComponentProps) {
             className={`bg-va-lime mt-5 transition-all sm:flex-1 xl:absolute xl:transform xl:duration-500  xl:translate-y-4 ${
               isHovered
                 ? 'xl:rotate-[-8.5deg] xl:translate-x-[330px]'
-                : 'xl:rotate-[8.5deg] xl:translate-x-[620px] xl:w-[333px]'
+                : 'xl:rotate-[8.5deg] xl:translate-x-[620px] xl:w-[333px] xl:max-w-[35.063rem]'
             }`}
           />
         </div>
