@@ -1,5 +1,5 @@
 @layer components {
-  /* Typography */
+  /* 适配 md 以上 */
   .h1 {
     @apply font-medium text-[#1a1a1a];
     font-size: 65px;
@@ -9,8 +9,8 @@
   .h2 {
     @apply font-medium text-[#1a1a1a];
     font-family: 'PolySans';
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .h3 {
@@ -18,36 +18,105 @@
     font-family: 'PolySans';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 35px;
+    line-height: 35px;
   }
 
-  /* Mobile/H4 */
   .h4 {
     font-family: 'PolySans';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .h5 {
-    @apply text-sm font-medium  text-[#9B9B9B];
+    font-family: 'PolySans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .p1 {
     font-family: 'DM Sans';
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .p2 {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button-primary {
+    @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
+  }
+
+  .hover-card {
+    @apply w-[333px];
+  }
+
+  /* Typography */
+  /* 适配 mobile */
+  @media screen and (max-width: 1024px) {
+    .h1 {
+      @apply font-medium text-[#1a1a1a];
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    .h2 {
+      @apply font-medium text-[#1a1a1a];
+      font-family: 'PolySans';
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    .h3 {
+      @apply text-[#1a1a1a];
+      font-family: 'PolySans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    /* Mobile/H4 */
+    .h4 {
+      font-family: 'PolySans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.125rem;
+    }
+
+    .h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .p1 {
+      font-family: 'DM Sans';
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    .p2 {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.313rem;
+    }
   }
 
   /* Card */
@@ -69,54 +138,11 @@
     @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
   }
 
-  /* 适配 md 以上 */
-  @media screen and (min-width: 768px) {
-    .h2 {
-      @apply font-medium text-[#1a1a1a];
-      font-family: 'PolySans';
-      font-size: 50px;
-      line-height: 50px;
-    }
-
-    .h3 {
-      @apply text-[#1a1a1a];
-      font-family: 'PolySans';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 35px;
-      line-height: 35px;
-    }
-
-    .h5 {
-      font-family: 'PolySans';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    .p1 {
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 27px;
-    }
-
-    .p2 {
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .button-primary {
-      @apply button bg-[color:var(--theme-color)] text-white rounded-full flex justify-center items-center;
-    }
-
-    .hover-card {
-      @apply w-[333px];
-    }
+  /* Save planet */
+  .title {
+    width: 330px;
+    margin-left: 34px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

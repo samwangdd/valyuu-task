@@ -55,7 +55,7 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           width={400}
           height={300}
           quality={90}
-          className='absolute w-[8.875rem] -top-[5rem] right-7 -rotate-[145deg] lg:w-[13.75rem] lg:right-[15.25rem]'
+          className='absolute w-[8.875rem] -top-[5rem] right-7 -rotate-[145deg] lg:right-[120px] lg:w-[220px] lg:max-w-[13.75rem]'
         />
         {/* valyuu logo */}
         <Image
@@ -64,7 +64,7 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           width={400}
           height={300}
           quality={90}
-          className='absolute w-[8.875rem] top-[14.375rem] left-[-2.75rem] -rotate-[28.5deg] lg:top-4 lg:w-[13.75rem]'
+          className='absolute w-[8.875rem] top-[14.375rem] left-[-2.75rem] -rotate-[28.5deg] lg:top-4 lg:w-[220px] lg:max-w-[13.75rem]'
         />
         {/* green */}
         <Image
@@ -73,7 +73,7 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           width={400}
           height={300}
           quality={90}
-          className='absolute -rotate-[148deg] hidden lg:block lg:top-[16rem] lg:left-[22.5rem] lg:w-[13.75rem]'
+          className='absolute -rotate-[148deg] hidden lg:block lg:top-[16rem] lg:left-[22.5rem] lg:w-[220px] lg:max-w-[13.75rem]'
         />
         {/* orange */}
         <Image
@@ -82,7 +82,7 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           width={400}
           height={300}
           quality={90}
-          className='absolute w-[7.875rem] top-[29rem] right-0 lg:top-[13.5rem] lg:w-[10.85rem]'
+          className='absolute w-[7.875rem] top-[29rem] right-0 lg:top-[13.5rem] lg:w-[174px] lg:max-w-[10.85rem]'
         />
         <Overlay />
       </div>

@@ -17,11 +17,11 @@ export default function SavePlantComponent(props: ISavePlantComponentProps) {
   return (
     <div ref={mainRef} className=' w-full bg-white z-20'>
       <div className='items-center relative border-b border-va-black bg-white pt-2 pb-[3.25rem] xl:pt-[4.5rem] xl:flex va-panel'>
-        <div className='text-center px-6 xl:text-left xl:w-[330px] xl:ml-[2.125rem]'>
+        <div className='text-center px-6 xl:text-left xl:title'>
           <p className='p1 mb-2 '>We believe</p>
           <p className='h3 mb-1'>Save planet is something everyone can do</p>
         </div>
-        <div className='sm:flex xl:h-[29.5rem] xl:flex-1 xl:relative'>
+        <div className='sm:flex xl:h-[472px] xl:flex-1 xl:relative'>
           <Card
             isHovered={!isHovered}
             src='/e62ba45a-df70-4ef5-932e-0a0a023d053e.png'

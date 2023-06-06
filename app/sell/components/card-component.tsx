@@ -33,10 +33,8 @@ const CardComponent = (props: ICardProps) => {
       />
       <div className='py-6 px-5 border-t border-va-black xl:border-0 xl:flex xl:flex-col justify-center'>
         <p
-          className={`h4 mb-2 transition-all duration-200 xl:relative xl:w-40 ${
-            isHovered
-              ? ' top-0 left-0 xl:text-va-black xl:text-left'
-              : 'top-[70px] left-[-260px] xl:text-white xl:text-center'
+          className={`h4 mb-2 transition-all duration-200 xl:relative xl:w-[250px] ${
+            isHovered ? ' top-0 left-0 xl:text-va-black xl:text-left' : 'top-[70px] left-[-260px] xl:text-white'
           }`}
         >
           {title}
