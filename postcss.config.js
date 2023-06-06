@@ -10,7 +10,7 @@ module.exports = {
       viewportUnit: 'vw', // 转换的视口单位
       selectorBlackList: ['ignore'], // 需要忽略转换的类名
       minPixelValue: 1, // 小于或等于 1 像素不转换
-      mediaQuery: false, // 是否在媒体查询中也进行转换
+      mediaQuery: true, // 是否在媒体查询中也进行转换
     },
   },
 };
