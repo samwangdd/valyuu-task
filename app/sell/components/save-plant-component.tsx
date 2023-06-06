@@ -16,23 +16,20 @@ export default function SavePlantComponent(props: ISavePlantComponentProps) {
 
   return (
     <div ref={mainRef} className=' w-full bg-white z-20'>
-      <div className='items-center relative border-b border-va-black bg-white pt-2 pb-[3.25rem] md:pt-[4.5rem] md:flex va-panel'>
-        <div className='text-center md:text-left md:w-[330px] md:ml-[2.125rem]'>
+      <div className='items-center relative border-b border-va-black bg-white pt-2 pb-[3.25rem] xl:pt-[4.5rem] xl:flex va-panel'>
+        <div className='text-center px-6 xl:text-left xl:w-[330px] xl:ml-[2.125rem]'>
           <p className='p1 mb-2 '>We believe</p>
-          <p className='h3 mb-1'>
-            Save planet is <br /> something everyone
-            <br /> can do
-          </p>
+          <p className='h3 mb-1'>Save planet is something everyone can do</p>
         </div>
-        <div className='md:h-[29.5rem] md:flex-1 md:relative'>
+        <div className='md:flex xl:h-[29.5rem] xl:flex-1 xl:relative'>
           <Card
             isHovered={!isHovered}
             src='/e62ba45a-df70-4ef5-932e-0a0a023d053e.png'
             title='Sustainability'
             description='donate the value of your product to Stichting Leergeld.'
             onClick={() => {}}
-            className={`bg-va-lavender mt-5 md:absolute md:transform transition-all md:duration-500 md:rotate-[-7deg] md:translate-y-5 ${
-              isHovered ? 'md:w-[333px] md:rotate-[7deg]' : ''
+            className={`bg-va-lavender mt-5 md:flex-1 xl:absolute xl:transform transition-all xl:duration-500 xl:rotate-[-7deg] xl:translate-y-5 ${
+              isHovered ? 'xl:w-[333px] xl:rotate-[7deg]' : ''
             }`}
           />
           <Card
@@ -43,10 +40,10 @@ export default function SavePlantComponent(props: ISavePlantComponentProps) {
             onClick={() => {}}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className={`bg-va-lime mt-5 transition-all md:absolute md:transform md:duration-500  md:translate-y-4 ${
+            className={`bg-va-lime mt-5 transition-all md:flex-1 xl:absolute xl:transform xl:duration-500  xl:translate-y-4 ${
               isHovered
-                ? 'md:rotate-[-8.5deg] md:translate-x-[330px]'
-                : 'md:rotate-[8.5deg] md:translate-x-[620px] md:w-[333px]'
+                ? 'xl:rotate-[-8.5deg] xl:translate-x-[330px]'
+                : 'xl:rotate-[8.5deg] xl:translate-x-[620px] xl:w-[333px]'
             }`}
           />
         </div>
