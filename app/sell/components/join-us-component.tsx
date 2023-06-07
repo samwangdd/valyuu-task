@@ -19,27 +19,27 @@ export default function JoinUsComponent(props: IJoinUsComponentProps) {
           <p className='h3 text-center mb-2'>Come and join us!</p>
           <p className='p1 text-center'>together with our 134,000 members, Valyuu has already</p>
         </div>
-        <div className='card mx-5 rounded-lg relative z-10 mt-6 lg:mt-10 lg:flex lg:items-center'>
+        <div className='card mx-5 rounded-lg relative z-10 mt-6 lg:mt-10 sm:flex sm:items-center'>
           <FlagItem
-            className='border-b border-va-black  lg:border-b-0 lg:flex-1'
+            className='border-b border-va-black sm:border-b-0 sm:flex-1'
             src='/USP1 2.png'
             flag='Saved CO₂'
             count='90,000g'
             desc='From Paris to New York'
             color='bg-va-forest'
           />
-          <Divider type='vertical' className='lg:border-r lg:h-20' />
+          <Divider type='vertical' className='sm:border-r sm:h-20' />
           <FlagItem
-            className='border-b lg:border-b-0 border-va-black lg:flex-1'
+            className='border-b sm:border-b-0 border-va-black sm:flex-1'
             src='/USP1 2-1.png'
             flag='Tree Planted'
             count='23,500'
             desc='Driving on GAS'
             color='bg-va-blue'
           />
-          <Divider type='vertical' className='lg:border-r lg:h-20' />
+          <Divider type='vertical' className='sm:border-r sm:h-20' />
           <FlagItem
-            className='lg:flex-1'
+            className='sm:flex-1'
             src='/USP1 2-2.png'
             flag='Donation'
             count='€7,600'
